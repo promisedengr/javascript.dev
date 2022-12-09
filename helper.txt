@@ -1,0 +1,9 @@
+https://medium.com/pythoneers/crud-operation-in-python-with-mysql-databases-e77ee5419c23
+https://examples.javacodegeeks.com/crud-operations-in-python-on-mysql/
+
+
+
+
+## GUI
+https://pythonguides.com/python-tkinter-table-tutorial/
+
