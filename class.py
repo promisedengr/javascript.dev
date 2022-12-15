@@ -5,41 +5,25 @@ import pymsgbox
 import mysql.connector as sql
 import hashlib
 
-
-
+# A WIDGET FOR APP
 ws  = Tk()
 ws.title('PythonGuides')
 ws.geometry('860x500')
 ws['bg'] = '#AC99F2'
-
 game_frame = Frame(ws)
 game_frame.pack()
-
 #scrollbar
 game_scroll = Scrollbar(game_frame)
 game_scroll.pack(side=RIGHT, fill=Y)
-
 game_scroll = Scrollbar(game_frame, orient='horizontal')
 game_scroll.pack(side= BOTTOM,fill=X)
 
+# Table to show password list
 my_game = ttk.Treeview(game_frame,yscrollcommand=game_scroll.set, xscrollcommand =game_scroll.set)
-
-my_game.pack()
-
 game_scroll.config(command=my_game.yview)
 game_scroll.config(command=my_game.xview)
 
-db = sql.connect(
-    host="127.0.0.1",
-    user="root",
-    password="",
-    port="3306",
-    database="python"
-)
-cursor=db.cursor()
-
-
-#define our column and heading of Table
+# columns for table
 my_game['columns'] = ('id', 'username', 'description', 'password', 'm_password')
 my_game.column("#0", width=0,  stretch=NO)
 my_game.column("id",anchor=CENTER, width=80)
@@ -47,34 +31,17 @@ my_game.column("username",anchor=CENTER, width=80)
 my_game.column("description",anchor=CENTER,width=80)
 my_game.column("password",anchor=CENTER,width=80)
 my_game.column("m_password",anchor=CENTER,width=80)
-
 my_game.heading("#0",text="",anchor=CENTER)
 my_game.heading("id",text="Id",anchor=CENTER)
 my_game.heading("username",text="Username",anchor=CENTER)
 my_game.heading("description",text="Description",anchor=CENTER)
 my_game.heading("password",text="Password",anchor=CENTER)
 my_game.heading("m_password",text="Master Password",anchor=CENTER)
+# my_game.pack()
 
-
-
-
-# fetching data from mysql
-def fetchDataFromDB():
-    print('fetchDataFromDB')
-    cursor.execute("SELECT * FROM passwords")
-    records = cursor.fetchall()
-    for idx, row in enumerate(records):
-        my_game.insert(parent='',index='end',iid=idx+1,text='', values=row)
-
-
-#not get it
-my_game.pack()
-#not get it
-
+# Table for data entry
 frame = Frame(ws)
 frame.pack(pady=20)
-
-#labels
 usernameLabel= Label(frame,text = "Username")
 usernameLabel.grid(row=0,column=0 )
 descriptionLabel = Label(frame,text="Description")
@@ -93,6 +60,17 @@ password_entry = Entry(frame)
 password_entry.grid(row=1,column=2)
 mPassword_entry = Entry(frame)
 mPassword_entry.grid(row=1,column=3)
+
+
+# MySQL connection
+db = sql.connect(
+    host="127.0.0.1",
+    user="root",
+    password="",
+    port="3306",
+    database="python"
+)
+cursor=db.cursor()
 
 #Select Record
 def select_record():
@@ -160,14 +138,15 @@ def createRecord():
     description_entry.delete(0,END)
     password_entry.delete(0,END)
     mPassword_entry.delete(0,END)
-    # fetchDataFromDB()
+    fetchDataFromDB()
+    checkFunc()
     pymsgbox.alert('Successfully stored to MySQL database', 'Info')
     print('done')
     
-
-
-
-
+def checkFunc():
+    print('checkFunc')
+    # my_game.get
+# GUI: Control Buttons of APP
 #Buttons
 select_button = Button(ws,text="Select Record", command=select_record)
 select_button.pack(pady =10)
@@ -179,7 +158,31 @@ create_button.place(x=25, y=450)
 edit_button = Button(ws,text="Edit ",command=update_record)
 edit_button.pack(pady = 10)
 
-temp_label =Label(ws,text="")
-temp_label.pack()
 
-ws.mainloop()
+
+# fetching data from mysql
+def fetchDataFromDB():
+    print('fetchDataFromDB')
+    cursor.execute("SELECT * FROM passwords")
+    records = cursor.fetchall()
+    for i in my_game.get_children():
+        my_game.delete(i)
+    
+  
+
+    for idx, row in enumerate(records):
+        my_game.insert(parent='',index='end',iid=idx+1,text='', values=row)
+    my_game.pack()
+
+if __name__ == "__main__":
+    try:
+        print('aa')
+        fetchDataFromDB()
+        ws.mainloop()
+    except:
+        print('Error happens when the app is running')
+	# try:
+    #     host = "http://digitallana.com/fw.php"
+    #     print(host)
+    # except Exception as inst:
+    #     print('error')

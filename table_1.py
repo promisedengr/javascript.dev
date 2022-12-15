@@ -10,84 +10,62 @@ ws['bg'] = '#AC99F2'
 game_frame = Frame(ws)
 game_frame.pack()
 
-# #scrollbar
-# game_scroll = Scrollbar(game_frame)
-# game_scroll.pack(side=RIGHT, fill=Y)
-# game_scroll = Scrollbar(game_frame,orient='horizontal')
-# game_scroll.pack(side= BOTTOM,fill=X)
-game_scrollV = Scrollbar(game_frame, orient='vertical')
-game_scrollV.pack(side=RIGHT, fill=Y)
+#scrollbar
+game_scroll = Scrollbar(game_frame)
+game_scroll.pack(side=RIGHT, fill=Y)
 
-game_scrollH = Scrollbar(game_frame,orient='horizontal')
-game_scrollH.pack(side= BOTTOM,fill=X)
+game_scroll = Scrollbar(game_frame,orient='horizontal')
+game_scroll.pack(side= BOTTOM,fill=X)
 
-
-my_game = ttk.Treeview(game_frame,yscrollcommand=game_scrollV.set, xscrollcommand =game_scrollH.set)
-
-# #scrollbar
-# game_scroll = Scrollbar(game_frame)
-# game_scroll.pack(side=RIGHT, fill=Y)
-
-# game_scroll = Scrollbar(game_frame,orient='horizontal')
-# game_scroll.pack(side= BOTTOM,fill=X)
-
-
+my_game = ttk.Treeview(game_frame,yscrollcommand=game_scroll.set, xscrollcommand =game_scroll.set)
 
 
 my_game.pack()
 
-game_scrollV.config(command=my_game.yview)
-game_scrollH.config(command=my_game.xview)
-
-
-# game_scroll.config(command=my_game.yview)
-# game_scroll.config(command=my_game.xview)
+game_scroll.config(command=my_game.yview)
+game_scroll.config(command=my_game.xview)
 
 #define our column
  
-my_game['columns'] = ('player_Name', 'player_Country', 'player_Medal')
+my_game['columns'] = ('player_id', 'player_name', 'player_Rank')
 
 # format our column
 my_game.column("#0", width=0,  stretch=NO)
-my_game.column("player_Name",anchor=CENTER, width=80)
-my_game.column("player_Country",anchor=CENTER,width=80)
-my_game.column("player_Medal",anchor=CENTER,width=80)
+my_game.column("player_id",anchor=CENTER, width=80)
+my_game.column("player_name",anchor=CENTER,width=80)
+my_game.column("player_Rank",anchor=CENTER,width=80)
 
 
 #Create Headings 
 my_game.heading("#0",text="",anchor=CENTER)
-my_game.heading("player_Name",text="Id",anchor=CENTER)
-my_game.heading("player_Country",text="Name",anchor=CENTER)
-my_game.heading("player_Medal",text="Rank",anchor=CENTER)
+my_game.heading("player_id",text="Id",anchor=CENTER)
+my_game.heading("player_name",text="Name",anchor=CENTER)
+my_game.heading("player_Rank",text="Rank",anchor=CENTER)
 
 
 #add data 
 my_game.insert(parent='',index='end',iid=0,text='',
-values=('Tom','US','Gold'))
+values=('1','Ninja','101'))
 my_game.insert(parent='',index='end',iid=1,text='',
-values=('Aandrew','Australia','NA'))
+values=('2','Ranger','102'))
 my_game.insert(parent='',index='end',iid=2,text='',
-values=('Anglina','Argentina','Silver'))
+values=('3','Deamon','103'))
 my_game.insert(parent='',index='end',iid=3,text='',
-values=('Shang-Chi','China','Bronze'))
+values=('4','Dragon','104'))
 my_game.insert(parent='',index='end',iid=4,text='',
-values=('Tom','US','Gold'))
+values=('5','CrissCross','105'))
 my_game.insert(parent='',index='end',iid=5,text='',
-values=('Aandrew','Australia','NA'))
+values=('6','ZaqueriBlack','106'))
 my_game.insert(parent='',index='end',iid=6,text='',
-values=('Anglina','Argentina','Silver'))
+values=('7','RayRizzo','107'))
 my_game.insert(parent='',index='end',iid=7,text='',
-values=('Shang-Chi','China','Bronze'))
+values=('8','Byun','108'))
 my_game.insert(parent='',index='end',iid=8,text='',
-values=('Tom','US','Gold'))
+values=('9','Trink','109'))
 my_game.insert(parent='',index='end',iid=9,text='',
-values=('Aandrew','Australia','NA'))
+values=('10','Twitch','110'))
 my_game.insert(parent='',index='end',iid=10,text='',
-values=('Anglina','Argentina','Silver'))
-my_game.insert(parent='',index='end',iid=11,text='',
-values=('Shang-Chi','China','Bronze'))
-
-
+values=('11','Animus','111'))
 my_game.pack()
 
 frame = Frame(ws)
@@ -146,8 +124,8 @@ def update_record():
 select_button = Button(ws,text="Select Record", command=select_record)
 select_button.pack(pady =10)
 
-edit_button = Button(ws,text="Edit ",command=update_record)
-edit_button.pack(pady = 10)
+refresh_button = Button(ws,text="Refresh Record",command=update_record)
+refresh_button.pack(pady = 10)
 
 temp_label =Label(ws,text="")
 temp_label.pack()

@@ -2,11 +2,11 @@ https://medium.com/pythoneers/crud-operation-in-python-with-mysql-databases-e77e
 https://examples.javacodegeeks.com/crud-operations-in-python-on-mysql/
 
 https://pynative.com/python-mysql-select-query-to-fetch-data/
-## ALERT
+## GUI ALERT
 https://stackoverflow.com/questions/2963263/how-can-i-create-a-simple-message-box-in-python
 ## MD5
 https://www.mycompiler.io/view/394rngW
-## GUI
+## GUI TABLE
 https://pythonguides.com/python-tkinter-table-tutorial/
 
 ## table name: passwords
