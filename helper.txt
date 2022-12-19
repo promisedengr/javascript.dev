@@ -4,8 +4,7 @@ https://examples.javacodegeeks.com/crud-operations-in-python-on-mysql/
 https://pynative.com/python-mysql-select-query-to-fetch-data/
 ## GUI ALERT
 https://stackoverflow.com/questions/2963263/how-can-i-create-a-simple-message-box-in-python
-## MD5
-https://www.mycompiler.io/view/394rngW
+
 ## GUI TABLE
 https://pythonguides.com/python-tkinter-table-tutorial/
 

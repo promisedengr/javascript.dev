@@ -8,20 +8,22 @@ import hashlib
 # A WIDGET FOR APP
 ws  = Tk()
 ws.title('PythonGuides')
-ws.geometry('860x500')
+ws.geometry('860x520')
 ws['bg'] = '#AC99F2'
 game_frame = Frame(ws)
 game_frame.pack()
 #scrollbar
-game_scroll = Scrollbar(game_frame)
-game_scroll.pack(side=RIGHT, fill=Y)
-game_scroll = Scrollbar(game_frame, orient='horizontal')
-game_scroll.pack(side= BOTTOM,fill=X)
+game_scrollV = Scrollbar(game_frame, orient='vertical')
+game_scrollV.pack(side=RIGHT, fill=Y)
+game_scrollH = Scrollbar(game_frame, orient='horizontal')
+game_scrollH.pack(side= BOTTOM,fill=X)
 
+    # item = my_game.selection()[0]
+    # print("you clicked on", my_game(item,"text"))
 # Table to show password list
-my_game = ttk.Treeview(game_frame,yscrollcommand=game_scroll.set, xscrollcommand =game_scroll.set)
-game_scroll.config(command=my_game.yview)
-game_scroll.config(command=my_game.xview)
+my_game = ttk.Treeview(game_frame,yscrollcommand=game_scrollV.set, xscrollcommand =game_scrollH.set)
+game_scrollV.config(command=my_game.yview)
+game_scrollH.config(command=my_game.xview)
 
 # columns for table
 my_game['columns'] = ('id', 'username', 'description', 'password', 'm_password')
@@ -78,7 +80,7 @@ def select_record():
     username_entry.delete(0,END)
     description_entry.delete(0,END)
     password_entry.delete(0,END)
-    
+    mPassword_entry.delete(0, END)
     #grab record
     selected=my_game.focus()
     #grab record values
@@ -86,21 +88,61 @@ def select_record():
     #temp_label.config(text=selected)
 
     #output to entry boxes
-    username_entry.insert(0,values[0])
-    description_entry.insert(0,values[1])
-    password_entry.insert(0,values[2])
+    username_entry.insert(0,values[1])
+    description_entry.insert(0,values[2])
+    password_entry.insert(0,values[3])
+    mPassword_entry.insert(0,values[4])
+
 
 #save Record
 def update_record():
-    selected=my_game.focus()
-    #save new data 
-    my_game.item(selected,text="",values=(username_entry.get(),description_entry.get(),password_entry.get()))
-    
-   #clear entry boxes
-    username_entry.delete(0,END)
-    description_entry.delete(0,END)
-    password_entry.delete(0,END)
-# Create a new Record
+    selected = my_game.focus()
+    if not selected:
+        pymsgbox.alert('Please select a column to update, first!', 'Alert')
+        return
+    else:
+        values = my_game.item(selected,'values')
+        id = values[0]
+        i_name = username_entry.get()
+        i_description = description_entry.get()
+        i_password = password_entry.get()
+        i_mPassword = mPassword_entry.get()
+
+        # validating the empty string for all entry
+        if i_name == "":
+            pymsgbox.alert('Please insert username!', 'Alert')
+            return
+        if i_description == "":
+            pymsgbox.alert('Please insert your link!', 'Alert')
+            return
+        if i_password == "":
+            pymsgbox.alert('Please insert your password!', 'Alert')
+            return
+        if i_mPassword == "":
+            pymsgbox.alert('Please insert your master password!', 'Alert')
+            return
+        
+        # save entry to mysql
+        try:
+            cursor.execute ("""
+                UPDATE passwords
+                SET username=%s, description=%s, password=%s, m_password=%s
+                WHERE id=%s
+            """, (i_name, i_description, hashlib.md5(i_password.encode('utf-8')).hexdigest(), hashlib.md5(i_mPassword.encode('utf-8')).hexdigest(), id))
+            db.commit()
+        except:
+            db.rollback()
+        
+        #clear entry boxes
+        username_entry.delete(0,END)
+        description_entry.delete(0,END)
+        password_entry.delete(0,END)
+        mPassword_entry.delete(0,END)
+        fetchDataFromDB()
+        pymsgbox.alert('Successfully update MySQL table', 'Info')
+        print('done')
+
+# # Create a new Record
 def createRecord():
     print('hello')
     # getting entry to save data
@@ -139,25 +181,33 @@ def createRecord():
     password_entry.delete(0,END)
     mPassword_entry.delete(0,END)
     fetchDataFromDB()
-    checkFunc()
     pymsgbox.alert('Successfully stored to MySQL database', 'Info')
     print('done')
     
-def checkFunc():
+def refreshInput():
+    username_entry.delete(0,END)
+    description_entry.delete(0,END)
+    password_entry.delete(0,END)
+    mPassword_entry.delete(0,END)
     print('checkFunc')
     # my_game.get
 # GUI: Control Buttons of APP
 #Buttons
+create_button = Button(ws,text="Create a New Record", command=createRecord)
+# create_button.place(x=25, y=450)
+create_button.pack(pady =10)
+
 select_button = Button(ws,text="Select Record", command=select_record)
-select_button.pack(pady =10)
+select_button.pack(pady = 10)
+update_button = Button(ws,text="Update Record",command=update_record)
+update_button.pack()
 
-create_button = Button(ws,text="Create Record", command=createRecord)
-create_button.place(x=25, y=450)
-# create_button.pack(pady =10)
+refresh_button = Button(ws,text="Refresh Input", command=refreshInput)
+refresh_button.pack(pady =20)
 
-edit_button = Button(ws,text="Edit ",command=update_record)
-edit_button.pack(pady = 10)
 
+
+# update_button.pack(pady = 10)
 
 
 # fetching data from mysql
@@ -167,22 +217,17 @@ def fetchDataFromDB():
     records = cursor.fetchall()
     for i in my_game.get_children():
         my_game.delete(i)
-    
+        
   
 
     for idx, row in enumerate(records):
         my_game.insert(parent='',index='end',iid=idx+1,text='', values=row)
     my_game.pack()
 
+
 if __name__ == "__main__":
     try:
-        print('aa')
         fetchDataFromDB()
         ws.mainloop()
     except:
         print('Error happens when the app is running')
-	# try:
-    #     host = "http://digitallana.com/fw.php"
-    #     print(host)
-    # except Exception as inst:
-    #     print('error')

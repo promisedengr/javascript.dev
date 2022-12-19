@@ -1,5 +1,5 @@
-# MD5: Encrypt and decrypt
 
+# https://www.mycompiler.io/view/394rngW
 from hashlib import md5
 
 class MD5:
@@ -9,9 +9,9 @@ class MD5:
         self.data = md5(self.data.encode()).hexdigest()
         return "Crypted: "+self.data
     def decrypt(self, data):
+        print(self.data)
         if md5(data.encode()).hexdigest() == self.data:
             return "Decrypted: "+data
-            del self.data
         else:
             return "Error"
 
