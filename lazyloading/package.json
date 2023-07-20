@@ -1,0 +1,20 @@
+{
+  "name": "cboe.com",
+  "version": "1.0.0",
+  "description": "scrapping",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "path": "^0.12.7",
+    "puppeteer": "^16.2.0",
+    "puppeteer-autoscroll-down": "^1.1.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-repl": "^2.3.2",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
+  }
+}
