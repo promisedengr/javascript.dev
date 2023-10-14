@@ -1,0 +1,29 @@
+[
+  {
+    "name": "cdn",
+    "value": "https://static.egcdn.com",
+    "domain": "babylonstk.evo-games.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true
+  },
+  {
+    "name": "lang",
+    "value": "ru",
+    "domain": "babylonstk.evo-games.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true
+  },
+  {
+    "name": "EVOSESSIONID",
+    "value": "qghqw3pqucdexjgdqgh6qiwmxllvxa4y713453210298ec0d9f4fde06f01e9549c5b4c4dc75f381ba",
+    "domain": "babylonstk.evo-games.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true
+  }
+]

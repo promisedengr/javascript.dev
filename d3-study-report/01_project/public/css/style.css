@@ -1,0 +1,156 @@
+/* body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  padding: 30px;
+} */
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body {
+  background: #1f253d;
+}
+.section-white {
+  padding: 30px; 
+  background-color: #D0CCC4; 
+  margin: 25px;
+
+  margin-top: 10px;
+}
+.section-dark {
+  margin-top: 10px;
+  padding: 30px; 
+  margin: 25px;
+  background-color: #4e5c93; 
+  color: white; 
+}
+
+
+div.tooltip {
+  position: absolute;
+  /* text-align: center; */
+  width: 240px;
+  height: 80px;
+  padding: 2px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font: 14px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+/* h1 {
+  margin-top: 0;
+} */
+
+#start-year-input {
+  width: 60px;
+}
+
+.source {
+  margin-top: 40px;
+  font-size: 10px;
+  color: #888;
+}
+.source a {
+  color: #888;
+}
+
+/* Tooltip */
+.tooltip circle {
+  fill: none;
+  stroke: #bd3939;
+}
+.tooltip text {
+  fill: #bd3939;
+}
+
+/* Axes */
+.axis line {
+  fill: none;
+  stroke: #8693a0;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 13px;
+  fill: #6b6b6b;
+}
+.axis-title {
+  font-size: 13px;
+  fill: #888;
+}
+.x-axis .domain {
+  stroke: #8693a0;
+}
+.y-axis .domain {
+  display: none;
+}
+
+/* Add your code here  for a02: q2*/
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("css/fonts/SuisseIntl-Regular.otf");
+}
+
+.selected {
+  fill: #afa2dc;
+  stroke: #2f225d;
+}
+
+.area {
+  clip-path: url(#clip);
+}
+
+.axis {
+  font-size: 12px;
+  font-family: "SuisseIntl"
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: left;
+  font-family: "SuisseIntl";
+  font-size: 12px;
+  width: 80px;
+  height: 52px;
+  padding: 8px;
+  /* background: white; */
+  pointer-events: none;
+  /* background-color: white; */
+  line-height: 0.05em;
+  /* border: solid;
+  border-width: 1px; */
+}
+
+.overlay {
+  fill: none;
+  opacity: 0.2
+}
+.mybars_1:hover {
+  fill: #bb5b40;
+  transition: fill ease-in-out 200ms;
+}
+#tooltip {
+  position: absolute;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 2px 2px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+.tooltip-label {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  color: #000;
+}

@@ -1,0 +1,143 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 13px; */
+  padding: 30px;
+  background-color: #091416;
+  color: #ffffff;
+}
+
+h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+}
+
+#start-year-input {
+  width: 60px;
+}
+
+.source {
+  margin-top: 40px;
+  font-size: 10px;
+  color: #888;
+}
+.source a {
+  color: #888;
+}
+
+/* Tooltip */
+.tooltip circle {
+  fill: none;
+  stroke: #bd3939;
+}
+.tooltip text {
+  fill: #bd3939;
+}
+
+/* Axes */
+.axis line {
+  fill: none;
+  stroke: #8693a0;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 13px;
+  fill: #6b6b6b;
+}
+.axis-title {
+  font-size: 13px;
+  fill: #888;
+}
+.x-axis .domain {
+  stroke: #8693a0;
+}
+.y-axis .domain {
+  display: none;
+}
+
+/* Add your code here  for a02: q2*/
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("css/fonts/SuisseIntl-Regular.otf");
+}
+
+.selected {
+  fill: #afa2dc;
+  stroke: #2f225d;
+}
+
+.area {
+  clip-path: url(#clip);
+}
+
+.axis {
+  font-size: 12px;
+  font-family: "SuisseIntl"
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: left;
+  font-family: "sans-serif";
+  font-size: 12px;
+  width: 80px;
+  height: 52px;
+  padding: 8px;
+  pointer-events: none;
+  line-height: 0.05em;
+}
+div.tooltip {
+  /* position: absolute; */
+  /* text-align: center; */
+  width: 240px;
+  height: 170px;
+  padding: 2px;
+  font: 14px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-top: 15px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+
+  pointer-events: none;
+}
+.tooltip_2{
+  position: absolute;
+  text-align: left;
+  font-family: "sans-serif";
+  font-size: 12px;
+  width: 80px;
+  height: 52px;
+  padding: 8px;
+  pointer-events: none;
+  line-height: 0.05em;
+   /* text-align: center; */
+   width: 240px;
+   height: 85px;
+   padding: 2px;
+   font: 14px sans-serif;
+   background: white;
+   border: 0px;
+   border-radius: 8px;
+   padding-left: 15px;
+   padding-top: 15px;
+   color: black;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.overlay {
+  fill: none;
+  opacity: 0.2
+}
+.bar:hover {
+  fill: #bb5b40;
+  transition: fill ease-in-out 200ms;
+}

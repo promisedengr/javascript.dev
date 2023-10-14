@@ -1,0 +1,161 @@
+[
+  {
+    "name": "currency_currency",
+    "value": "btc",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "currency_hideZeroBalances",
+    "value": "false",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "currency_currencyView",
+    "value": "crypto",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "sidebarView",
+    "value": "hidden",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "casinoSearch",
+    "value": "[\"Monopoly\",\"Crazy Time\",\"Sweet Bonanza\",\"Money Train\",\"Reactoonz\"]",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "sportsSearch",
+    "value": "[\"Liverpool FC\",\"Kansas City Chiefs\",\"Los Angeles Lakers\",\"FC Barcelona\",\"FC Bayern Munich\"]",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "oddsFormat",
+    "value": "decimal",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "sportMarketGroupMap",
+    "value": "{}",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "locale",
+    "value": "ru",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337620,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "intercom-id-cx1ywgf2",
+    "value": "1ea2af9a-3a11-4ddb-a471-03e9282b306b",
+    "domain": ".stake.com",
+    "path": "/",
+    "expires": 1679292267,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "session",
+    "value": "333e06d2f9f4340b1c27871a1b4a6902e17b853e3d730cabb4a739768daa73bc8fd9d31eddefe653f44ac17b6f1fd0c0",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971322296,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "session_info",
+    "value": "{\"id\":\"ddedd61a-7952-4aeb-bec6-2a7b9558738e\",\"sessionName\":\"Chrome (Unknown)\",\"ip\":\"185.217.68.134\",\"country\":\"RO\",\"city\":\"Bucharest\",\"active\":true,\"updatedAt\":\"Thu, 23 Jun 2022 05:31:36 GMT\",\"__typename\":\"UserSession\"}",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cookie_consent",
+    "value": "true",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "leftSidebarView_v2",
+    "value": "minimized",
+    "domain": "stake.com",
+    "path": "/",
+    "expires": 1971337618,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__cf_bm",
+    "value": "jpRnf663Vfb_44uYqgEbYVhQVJ9ueIxjhuoLzRl0ZXg-1655976759-0-AbLOt87TYc7fr+i54BByFepPESYHe5Hq0YlZcS/LHY2jtTTe5ZgYPPVQbiEw6mR7klgD+2to4p6RN8TYhok3GbE=",
+    "domain": ".stake.com",
+    "path": "/",
+    "expires": 1655978559.886551,
+    "httpOnly": true,
+    "secure": true
+  },
+  {
+    "name": "intercom-session-cx1ywgf2",
+    "value": "TjBRdGsrTXlOSitmdHVkaW0yK1FKNk1LYmpBOHpNbWh3SWs0UVQzT21GZHBiSVJ6MVhRTWQ0RHNxK3M2Z2ZRZy0tdGRTT0FaRXl1aHZTcXBhZ284ZlNlZz09--b2237dfc655145011f415474614404cc9bed9bc0",
+    "domain": ".stake.com",
+    "path": "/",
+    "expires": 1656581565,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]

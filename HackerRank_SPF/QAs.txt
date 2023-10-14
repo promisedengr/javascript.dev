@@ -1,0 +1,21 @@
+0. Don't show face if possible.
+
+1. Asian face
+I usually get rejected from many job platforms since I am an Asian-faced. They usually don't give a chance to take a test.
+I can send you a correct CV if you want.
+I am a Chinese living in the Netherlands. Name is Lucas Wang.
+
+2. Technical - Refer the CV attached.
+Worked as a mobile application developer for several years. Stitch Health was the last project I worked on. After that I saw huge potential and market need of web development. So learnt Webstack and I am quite familiar with both of web frontend and backend.
+I liked Laravel for the backend framework since it's quite matured and structured well.
+
+3. Salary expectation
+Minimum expectation: $70000/year
+$50 ~ $70/hr for short-term contract.
+
+3. Questions
+3.1. What is the team like? How many and how are the team members? Hope no racisim is going there.
+3.2. What is your expectation for me? What part will I work on?
+3.3. How long will this project take?
+3.4. I have other tech-stacks(mobile, network streaming - built a video conferencing system/blockchain - built a simple blockchain-based chat app/a bit of AI) rather than web-frontend. Is there any possiblity to switch other positions?
+3.5. ...

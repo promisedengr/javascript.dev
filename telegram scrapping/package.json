@@ -1,0 +1,30 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && babel-node index.js",
+    "clean": "rm -rf data && mkdir data "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "async": "^3.1.0",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.11",
+    "cherio": "^1.0.0-rc.2",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1",
+    "puppeteer": "^1.18.1",
+    "request": "^2.88.2",
+    "transliteration": "^2.1.4"
+  }
+}

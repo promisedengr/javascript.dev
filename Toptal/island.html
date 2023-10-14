@@ -1,0 +1,99 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+test = [[1,1,0],
+[1,0,1],
+[0,0,1]];
+
+
+// Answer should be 5
+
+var Cell = function(x, y, val) {
+    this.row = x;
+    this.col = y;
+    this.val = val;
+    this.visited = false;
+}
+
+Cell.prototype.visit = function() {
+    this.visited = true;
+}
+
+var CellMatrix = function(arr) {
+    inst = [];
+    for(i=0; i < arr[0].length; i++) {
+        for(k=0; k < arr.length; k++) {
+            inst.push(new Cell(i, k, arr[i][k]));
+        }
+    }
+    this.length = inst.length;
+    //console.log(inst);
+    return inst;
+}
+
+function find(row, col, cells) {
+    for(i=0; i < cells.length; i++) {
+        cell = cells[i];
+        if((cell.row == row) && (cell.col == col) && (!cell.visited))
+            return cell;
+        else {
+            continue;
+        }
+    }
+    return false;
+}
+
+function findLargestGrouping(cells, rows, cols) {
+    console.log(cells);
+    groups = []
+    for(i=0; i < cells.length; i++) {
+        cell = cells[i];
+        // not a border cell
+        if( (cell.row > 0) && (cell.row < (rows - 1))  )
+        {
+            if( (cell.col > 0) && (cell.col < (cols - 1)) ) {
+                // console.log("cell at row " + cell.row + " col " + cell.col + " and val " + cell.val);
+                groups.push(searchNeighbors(cell, cells));
+            }
+        }
+        else { continue; }
+    }
+    return Math.max.apply(Math, groups);
+}
+
+function searchNeighbors(cell, matrix) {
+    neighbors = [[cell.row - 1, cell.col - 1], // top left
+                [cell.row - 1, cell.col], // top center
+                [cell.row - 1, cell.col + 1], // top right
+                [cell.row, cell.col - 1], // center left
+                [cell.row, cell.col + 1], // center right
+                [cell.row + 1, cell.col - 1], // bottom left
+                [cell.row + 1, cell.col], // bottom center
+                [cell.row + 1, cell.col + 1]];
+
+    results = 0;
+    for(i=0; i < neighbors.length; i++) {
+        _row = neighbors[i][0];
+        _col = neighbors[i][1];
+        _cell = find(_row, _col, matrix);
+        console.log("cell at row " + cell.row + " col " + cell.col + " and val " + cell.val);
+        if(_cell) {
+            if(!_cell.visited) {
+                _cell.visit();
+                results += 1;
+            }
+        }
+    }
+    return results;
+}
+
+window.onload = function() {
+    matrix = new CellMatrix(test);
+    results = findLargestGrouping(matrix, 4, 4);
+    console.log(results);
+}
+</script>
+</body>
+</html>

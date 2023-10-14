@@ -1,0 +1,18 @@
+//1.
+function balancedSum(arr) {
+    let left = [];
+    let tot;
+    let i;
+    left.push(arr[0]);
+    tot = arr[0];
+    for(i = 1; i < arr.length; i ++) {
+        left.push(left[i - 1] + arr[i]);
+        tot += arr[i];
+    }
+    for(i = 1; i < arr.length; i ++) {
+        if(left[i - 1] === tot - left[i]) {
+            return i;
+        }
+    }
+    return -1;
+}

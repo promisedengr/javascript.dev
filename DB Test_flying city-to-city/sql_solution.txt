@@ -1,0 +1,39 @@
+SELECT 
+	origin, 
+	destination,
+	stops,
+	MIN(cost) as cost
+FROM
+	(
+		(
+		SELECT 
+			origin,
+			destination,
+			0 as stops,
+			cost
+		FROM
+			flights
+		)
+	UNION
+		(
+		SELECT
+			f1.origin as origin,
+			f2.destination as destination,
+			1 as stops,
+			f1.cost + f2.cost as cost
+		FROM flights as f1
+			INNER JOIN flights f2 ON f1.destination = f2.origin
+		)
+	UNION
+		(
+		SELECT
+			f1.origin as origin,
+			f3.destination as destination,
+			2 as stops,
+			f1.cost + f2.cost + f3.cost as cost
+		FROM flights as f1
+			INNER JOIN flights f2 ON f1.destination = f2.origin
+			INNER JOIN flights f3 ON f2.destination = f3.origin
+		)
+	) temp
+GROUP BY origin, destination
