@@ -1,3 +1,5 @@
+const binary = addBinaryStrings('a', 'cb')
+console.log(binary)
 function addBinaryStrings(a, b) {
   let carry = 0
   let result = ''
