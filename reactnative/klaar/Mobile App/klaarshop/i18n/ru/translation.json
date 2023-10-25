@@ -1,0 +1,238 @@
+{
+  "auth": {
+    "loginTitle": "Login",
+    "loginDescription": "Welcome back,\n Sign in to continue",
+    "forgotPassButton": "Forgot password?",
+    "loginQuestion1": "Don’t have an account? ",
+    "loginQuestion2": "Create account",
+    "signUpTitle": "Create account",
+    "signUpDescription1": "Enter your new account \n details",
+    "signUpDescription2": "Please enter the 4-digit code send to you at",
+    "signUpQuestion1": "Already have an account? ",
+    "signUpQuestion2": "Sign In",
+    "signUpNoCodeQuestion1": "Didnt recieved code? ",
+    "signUpNoCodeQuestion2": "Resend Code",
+    "termsText1": "I agree with our ",
+    "termsText2": "Terms",
+    "termsText3": " and ",
+    "termsText4": "Conditions",
+    "resetPassTitle1": "Reset Password",
+    "resetPassTitle2": "Pass Code",
+    "resetPassDescription1": "Enter your email to reset\nyour password",
+    "resetPassDescription2": "Enter new password to reset\nyour details",
+    "resetPassDescription3": "Please enter the 4-digit code to\nreset password",
+    "resetPassQuestion1": "Did not receive message? ",
+    "resetPassQuestion2": "Resend",
+    "otpDescription": "Please enter the 4-digit code send to you at ",
+    "resendCodeAlert": "Сode was sent successfully"
+  },
+  "profile": {
+    "profileTitle": "Профиль",
+    "favorites": "Избранное",
+    "myAnnouncm": "Мои обьявления",
+    "purchaseHistory": "История покупок",
+    "reviews": "Отзывы",
+    "purchaseStatus": "Статус покупок",
+    "approveProduct": "Approve / Reject Product",
+    "giveFeedback": "Оставить отзыв",
+    "deliveryAddress": "Мой адресс",
+    "personalData": "Персональные данные",
+    "settings": "Настройки",
+    "logOut": "Выйти",
+    "town": "Город",
+    "region": "Регион",
+    "street": "Улица",
+    "houseNumber": "Номер дома",
+    "ap": "Квартира",
+    "postcode": "Почтовый индекс",
+    "name": "Имя",
+    "surname": "Фамилия",
+    "post": "Почта",
+    "phone": "Номер",
+    "birthday": "Дата Рождения",
+    "photo": "Изменить фото"
+  },
+  "addProduct": {
+    "editProduct": "Редактировать продукт",
+    "addProduct": "Добавить продукт",
+    "changePhoto": "Изменить фото",
+    "productsTitle": "Название",
+    "categories": "Категория",
+    "subcategories": "Саб-категория",
+    "description": "Описание",
+    "price": "Цена",
+    "currency": "Валюта",
+    "loadColor": "Цвет",
+    "size": "Размер",
+    "delivery": "Доставка",
+    "fromPrice": "от 0.25$",
+    "addPhoto": "Добавить фото",
+    "Post": "Почта",
+    "pickup": "Самовывоз",
+    "item": "ТОВАР",
+    "color": "цвет"
+  },
+  "inputs": {
+    "email": "Имэйл",
+    "password": "Пароль",
+    "repeatPassword": "Повторите пароль",
+    "name": "Имя",
+    "surname": "Фамилия",
+    "phone": "Phone",
+    "search": "Поиск",
+    "Not selected": "Не выбрано"
+  },
+  "toolbar": {
+    "cart": "Корзина",
+    "price": "Сумма заказа",
+    "pay": "Перейти к оплате",
+    "All": {
+      "All": "Все"
+    },
+    "bags": {
+      "bags": "Сумки",
+      "backpacks": "Backpacks",
+      "bum bags": "Bum Bags",
+      "card holders": "Card Holders",
+      "wallets": "Wallets"
+    },
+    "beauty": {
+      "beauty": "Красота",
+      "makeup": "Makeup",
+      "face masks": "Face Masks",
+      "toners": "Toners",
+      "bath oils": "Bath Oils",
+      "styling": "Styling",
+      "other": "Other"
+    },
+    "clothes": {
+      "clothes": "Одежда",
+      "polo shirts": "Polo",
+      "t shirts": "T Shirts",
+      "vests": "Vests",
+      "trousers": "Trousers",
+      "jeans": "Jeans",
+      "tracksuits": "Tracksuits"
+    },
+    "kids": {
+      "kids": "Дети",
+      "pampers": "Pampers",
+      "toys": "Toys",
+      "clothes": "Clothes",
+      "games": "Games",
+      "other": "Other"
+    },
+    "shoes": {
+      "shoes": "Обувь",
+      "boots": "Boots",
+      "flip flops": "Flip Flops",
+      "sandals": "Sandals",
+      "slippers": "Slippers",
+      "trainers": "Trainers"
+    },
+    "tickets": {
+      "tickets": "Билеты",
+      "cinema": "Cinema",
+      "concert": "Concert",
+      "art": "Art",
+      "gallery": "Gallery",
+      "other": "Other"
+    },
+    "watches": {
+      "watches": "Часы",
+      "modern": "Modern",
+      "digital": "Digital",
+      "analog": "Analog"
+    }
+  },
+  "buttons": {
+    "next": "Дальше",
+    "send": "Отправить",
+    "save": "Сохранить",
+    "login": "Войти",
+    "createAccount": "Создать Аккаунт",
+    "reset": "Восстановить",
+    "privacyPolicy": "Privacy Policy",
+    "termsNConditions": "Terms & Conditions",
+    "less": "Меньше",
+    "more": "Больше",
+    "sort": "Сорт",
+    "filters": "Фильтр",
+    "review": "Оставить отзыв",
+    "message": "Написать сообщение"
+  },
+  "errors": {
+    "emailFormat": "Incorrect email format",
+    "passFormat": "Incorrect password format",
+    "nameFormat": "Incorrect name format",
+    "surnameFormat": "Incorrect surname format",
+    "passwordsDsntMatch": "Passwords doen`t match",
+    "correctData": "Enter correct data",
+    "uNeedToBeSeller": "You need to be a seller. Please, fill your profile.",
+    "role": "Role",
+    "select": "Not Selected"
+  },
+  "product": {
+    "product": "Продукт",
+    "buy": "Купить",
+    "city": "Город",
+    "size": "Размер",
+    "delilivery": "ТИП ДОСТАВКИ",
+    "color": "ЦВЕТ",
+    "description": "ОПИСАНИЕ"
+  },
+  "reviews": {
+    "review": "Отзывы",
+    "today": "Сегодня",
+    "more": "Больше",
+    "title": "Отзыв"
+  },
+  "filter": {
+    "allcategories": "Все категории",
+    "incategoty": "Все в этой категории",
+    "category": "Категории"
+  },
+  "user": {
+    "user": "Профиль пользователя",
+    "message": "Сообщение"
+  },
+  "order": {
+    "order": "Заказ",
+    "pay": "Оплатить",
+    "shipped": "В пути",
+    "delivered": "Доставлено",
+    "confirmDelivery": "Подтвердить доставку",
+    "name": "Название",
+    "size": "Размер",
+    "orderamount": "Сумма заказа",
+    "create": "Оформление заказа",
+    "items": "Товары"
+  },
+  "notification": {
+    "subtitle": "Недавно вы совершили покупку. Хотите\n поделиться своими впечетлениями и вашим\n отзывом с другими покупателями?",
+    "title": "Оставить отзыв о \n покупке?",
+    "yes": "Да!",
+    "no": "Нет, спасибо!"
+  },
+  "status": {
+    "payment": "Оплата",
+    "pending": "Отправка",
+    "shipped": "В пути",
+    "delivered": "Доставлено",
+    "progress": "В процессе",
+    "unknown": "Неизвестно"
+  },
+  "settings": {
+    "currency": "Валюта",
+    "language": "Язык",
+    "source": "Открытый код",
+    "terms": "Условия Использования",
+    "policy": "Политика Конфеденципльности"
+  },
+  "Валюта": "Валюта",
+  "Настройки": "Настройки",
+  "Изменить язык": "Изменить язык",
+  "Open Source": "Открытый код",
+  "Условия использования": "Условия использования",
+  "Политика конфеденциальности": "Политика конфеденциальности"
+}

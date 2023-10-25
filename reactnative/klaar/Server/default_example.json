@@ -1,0 +1,48 @@
+{
+    "jwtKey": "",
+    "prefix": "http://167.99.41.6/",
+    "nodes": {
+        "apiServer": {
+            "name": "API server",
+            "host": "127.0.1.0",
+            "port": 3010
+        },
+        "authServer": {
+            "name": "Auth server",
+            "host": "127.0.2.0",
+            "port": 3020
+        },
+        "socketServer": {
+            "name": "Socket server",
+            "host": "127.0.3.0",
+            "port": 3030
+        },
+        "worker": {
+            "name": "WORKER",
+            "host": "127.0.4.0",
+            "port": 3040
+        }
+    },
+	"db": {
+        "main": "",
+        "monq": "m",
+        "redis": {
+            "host": "127.0.0.1",
+            "port": 6379,
+            "family": 4,
+            "password": "",
+            "db": 0
+        }
+    },
+    "stripe": {
+        "publicKey": "",
+        "secretKey": ""
+    },
+	"google": {
+		"mailerUser": "example@gmail.com",
+		"clientId": "",
+		"clientSecret": "",
+		"redirectUri": "https://developers.google.com/oauthplayground",
+		"refreshToken": ""
+	}
+}

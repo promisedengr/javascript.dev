@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>266332807977-l5v8ofqqq1cfdlvh6m6qink0me6psufs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.266332807977-l5v8ofqqq1cfdlvh6m6qink0me6psufs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUaI55epJOQWfNOJd1hutTtU8Jr9bbqwk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>266332807977</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.UzaroApp.project</string>
+	<key>PROJECT_ID</key>
+	<string>uzaro-ce6f0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>uzaro-ce6f0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:266332807977:ios:6a466330979bacecf6cd38</string>
+	<key>DATABASE_URL</key>
+	<string>https://uzaro-ce6f0.firebaseio.com</string>
+</dict>
+</plist>

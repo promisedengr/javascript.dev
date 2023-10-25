@@ -1,0 +1,16 @@
+define({
+  "name": "Klaar shop",
+  "version": "0.0.0",
+  "description": "API documentation",
+  "title": "Klaar shop",
+  "url": "http://167.99.41.6",
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2021-06-23T16:40:06.823Z",
+    "url": "http://apidocjs.com",
+    "version": "0.23.0"
+  }
+});

@@ -1,0 +1,50 @@
+{
+    "jwtKey": "jSAnvM9drHpn7AJArUtW74BeWVT844DoaeeExDrFYnHgGf8aq0l0r3rqUsTYQqOW",
+    "prefix": "http://167.99.41.6/",
+    "socketPath": "/chat/socket.io",
+    "nodes": {
+        "apiServer": {
+            "name": "API server",
+            "host": "127.0.1.0",
+            "port": 3010
+        },
+        "authServer": {
+            "name": "Auth server",
+            "host": "127.0.2.0",
+            "port": 3020
+        },
+        "chats": [
+            {"name": "socket#0", "host": "127.0.3.0", "port": 3030},
+            {"name": "socket#1", "host": "127.0.3.1", "port": 3031},
+            {"name": "socket#2", "host": "127.0.3.2", "port": 3032},
+            {"name": "socket#3", "host": "127.0.3.3", "port": 3033}
+        ],
+        "worker": {
+            "name": "WORKER",
+            "host": "127.0.4.0",
+            "port": 3040
+        }
+    },
+	"db": {
+        "main": "mongodb://uzarikMainUser:bkzXHEgfhjdayvxV4RNW@127.0.0.1:27017/uzarikMain",
+        "monq": "mongodb://uzarikMonqUser:d9hfakg4NxiePjA3JVot@127.0.0.1:27017/uzarikMonq",
+        "redis": {
+            "host": "127.0.0.1",
+            "port": 6379,
+            "family": 4,
+            "password": "eEfzYOEVbYenn+g2tCekWmSkO2dADKOY091jCLVQ5y24/5Jxq6taa1pCLY1sFZJ54+ufV891pfVLIATeroot",
+            "db": 0
+        }
+    },
+    "stripe": {
+        "publicKey": "pk_test_51IBkY9JD6WXzzJcIWEUX5Z5646UznQzLIVwB0hWtM1aj6K4CpSaf5PIv5iu7yEvqt3BuqyTDQk2GUf4zPIGQV2dE004ntqgD7I",
+        "secretKey": "sk_test_51IBkY9JD6WXzzJcIbPHSzA0JqL84IrHLUzMWDV6GlfJqTKLvdB2aLZnLKoOgfWB1qApHgeOWyebwrWhkjZwHgQoQ00y9Pgbmpt"
+    },
+	"google": {
+		"mailerUser": "klaarshop.app@gmail.com",
+		"clientId": "313234353083-ms53nbeofan9fujub8tbm94406larh9v.apps.googleusercontent.com",
+		"clientSecret": "eFuV0RaFem9QdVsyUwnBjlEs",
+		"redirectUri": "https://developers.google.com/oauthplayground",
+		"refreshToken": "1//04rX-nUx6yz6ECgYIARAAGAQSNwF-L9IrfkJ71n9dzvkSMn7PZz2Ikf6b9hs910IdULxCFnrN4JUUl6s7Dt3LtUBWQBAGBzs7Kqs"
+	}
+}
