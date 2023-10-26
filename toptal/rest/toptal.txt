@@ -1,0 +1,54 @@
+Previous Toptal tests
+
+1. We make a loop from minimum positive integer 1.
+
+If we find an iterator in the array A which means the iterator is included in front faces of cards, we flip.
+   In this case, if the iterator again appears in flipped card, then we conclude that this iterator can't be the game score and we increases the iterator by 1.
+                 if the iterator doesn't appear in flipped card, then we again search remaining front faces of cards to see if it exists in remaining cards' front faces.
+
+We repeat above operation until we reach out to the end of array, and if the iterator is not found then this iterator becomes the game score.
+
+This is the algorithm and I implemented this in my test.
+
+2. First we calculate a capital based on the input provided. If T[p] = q and p = q then p is a capital. And then we also calculate linked cities per city based on the input and push them as distinations array. So each distination element will include the linked cities of that city.
+
+And then we start from a captal with those distinations array. I used accumulative calculation function(reduce) in Javascript to get a distance between two cities.
+So first we get the number of cities positioned at 1-length distance from capital city. And then for 2-length distance, we can calculate it by adding first result and a number of cities linked to those cities from first iteration.
+
+This is the algorithm and I implemented this in my test.
+
+
+3. We make three nested loops for three kinds of rest stops.
+   We check if the condition A[i] < B[j] < C[k] is satisfied.
+   If the condition is not satisfied then we skip to next iterator in the current inner loop.
+   In this way we count all the possible combinations which satisfy above condition and returns the count if the count is not greater than 1,000,000,000.
+   If the count is greater than 1,000,000,000 then the function returns -1
+
+   This is the algorithm and I implemented this in my test.
+
+
+
+- My previous projects(if he asks or you can tell him if you have time):
+
+1. MSGHero app(msghero.com) - This is built in Javascript, PHP, CodeIgniter and my role was a full stack developer when building a MVP.
+The company name is SMM productions based in South Africa.
+
+It is a Facebook messenger bot/chatbot. The main function is when you comment on a specific Facebook post, this bot automatically replies to that comment with the text you have configured so that you can advertise your products through the bot targeting those people who are interested in your products. This is the main feature of the app and there are also other many functions like showing analytics, setting up campaigns, customizing a series of messages with questions and graphics, broadcasting messages, creating messaging funnels etc.
+I was the only developer for this application using CodeIgniter as a main framework.
+
+(Client name: Brad Stephens, Company: SMM Productions, Location: South Africa)
+
+
+2. Trackify app(Shopify app - http://trackifyapp.com/)
+
+It is a Shopify app that helps you install Facebook pixel on your store, as well as create custom or lookalike audiences, create Facebook product catalogs and also run customized remarketing ads on facebook. I've involved in a team for this project and I worked as a back-end developer for mostly Facebook API integration part.
+
+(Client name: Thomas Bartke, Company: REDRetarget, Location: US)
+
+
+- References:
+Robert Poitras, CTO at SocialRoot, info@socialroot.co
+Valentin Marinov, Head developer at Cawasa, vmarinov@cawasa.com
+
+
+
