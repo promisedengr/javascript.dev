@@ -1,0 +1,15 @@
+{
+  "name": "a02_q4_ans",
+  "version": "1.0.0",
+  "description": "it452 assignment 02 q4",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
