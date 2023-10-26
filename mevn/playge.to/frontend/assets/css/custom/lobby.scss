@@ -1,0 +1,104 @@
+.filters {
+  display: none;
+  @media (max-width: $fury-start-collapse){
+      display: grid;
+  }
+}
+.lobby {
+    position: relative;
+    .lobby__tabs-mobile {
+      display: none;
+      @media (max-width: $fury-start-collapse){
+        display: flex;
+      }
+    }
+    .lobby__tabs{
+      margin-bottom: 24px;
+      z-index: 6;
+      position: relative;
+      display: flex;
+  
+      background: #161f2c;
+      border-radius: 14px;
+      justify-content: space-between;
+      padding: 5px;
+      @media (max-width: $fury-start-collapse){
+        display: none;
+      }
+      .categories {
+        display: flex;
+        align-items: center;
+        .tab--active {
+          background-color: $primary-color;
+          color:#fff!important;
+          font-weight: 500;
+        }
+        .tab {
+          font-size: $fury-font-md;
+          color: #93acd3;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 7px;
+          margin-right: 10px;
+          padding: 4px 3px;
+          display: flex;
+          align-items: center;
+          &:hover{
+            color:#fff
+          }
+          .icon {
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-right: 4px;
+          }
+          .title {
+            white-space: nowrap;
+          }
+          .badge {
+            color: #2283f6;
+            margin-left: 8px;
+            font-weight: 700;
+            font-size: 10px;
+            padding: 1px 6px;
+            background: #fff;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .category{
+      content-visibility: auto;
+      margin-bottom: 32px;
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        min-height: 30px;
+        .title {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          font-weight: 600;
+          font-size: 16px;
+          white-space: nowrap;
+          text-transform: capitalize;
+          text-decoration: none;
+          color: #93acd3;
+          transition: color .1s ease-in-out;
+        }
+        .buttons {
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .body {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }

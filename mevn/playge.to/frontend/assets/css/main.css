@@ -1,0 +1,18 @@
+@import './betfury/mobile.css';
+@import './betfury/OneSignalSDKStyles.css';
+@import './betfury/style.css';
+@import './betfury/styles__ltr.css';
+@import './betfury/tablet.css';
+
+.button-tab_sm {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3rem;
+}
+.button_xl.button_only-icon, .button_xl:not(.button_only-icon) {
+    padding: 20px;
+}
+.button_xl.button{
+    border-radius: 14px;
+    font-size: 18px;
+}

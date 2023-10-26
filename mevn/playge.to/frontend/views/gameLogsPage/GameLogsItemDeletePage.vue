@@ -1,0 +1,146 @@
+<template>
+    <!-- <div class="accountBlock-ava" style="width: 70%;"> -->
+    <div class="mt-5" style="width: 100%;">
+        <div class="accountBlock-title">
+            Deleted Item History
+        </div>
+        <div v-if="purchases.length > 0" class="log-table-box">
+            <b-table class="table" :items="shows" :fields="fields" thead-class="purchase-table">
+                <template #cell(index)="data" class="kaf">
+                    <label class="tr-col__center" style = "color: #fff;">
+                        <span>{{data.index + 1 + perPage * (currentPage - 1)}}</span>
+                    </label>
+                </template>
+                <template #cell(LOG_DATE)="data" class="kaf">
+                    <label class="tr-col__center" style = "color: #fff;">
+                        <span>{{formatDate(data.item.LOG_DATE)}}</span>
+                    </label>
+                </template>
+            </b-table>
+            <b-pagination
+                v-model = "currentPage"
+                :total-rows="totalCount"
+                :per-page="perPage"
+                first-class ="number-prev"
+                first-number
+                last-number
+                class="pagination flex-c-c">
+                <template #prev-text><i class="icon-left"></i></template>
+                <template #next-text><i class="icon-right"></i></template>
+            </b-pagination>
+        </div>
+        <div v-else style="display: flex; justify-content: center; align-items: center;">No History Yet</div>
+    </div>
+</template>
+<script>
+    import moment from 'moment';
+    export default {
+        data() {
+            return {
+                purchases: [],
+                shows: [],
+                fields: [
+                    { key: 'index', label: ''},
+                    { key: 'item_name', label: 'Item Name' },
+                    { key: 'ITEM_COUNT', label: 'Count'},
+                    { key: 'ZONE_NAME', label: 'Zone Name'},
+                    { key: 'COMMANDER_NAME', label: 'Commander Name'},
+                    { key: 'LOG_DATE', label: 'Date'},
+                ],
+                currentPage:1,
+				totalCount:0,
+				perPage: 5,
+            }
+        },
+        created(){
+            this.getDeletedItemHistory()
+        },
+        watch: {
+            currentPage: {
+				immediate: true, 
+				handler (val, oldVal) {
+                    if (val != oldVal){
+                        this.shows = this.purchases.slice((this.currentPage - 1) * this.perPage , this.currentPage * this.perPage)
+                    }
+				}
+			},
+		},
+        methods: {
+            formatDate(date) {
+                return moment(date).utc().format('YYYY-MM-DD')
+            },
+            getDeletedItemHistory() {
+                console.log('getDeletedItemHistory')
+                let data = {}
+                data.perPage = this.perPage
+				data.currentPage = this.currentPage
+                this.$api.request.getDeletedItemHistory(data, (res => {
+                    if (res.status == 200) {
+						this.purchases = res.data.deleted_list.sort((a, b) => moment(a.LOG_DATE)- moment(b.LOG_DATE))
+                        this.shows = this.purchases.slice((data.currentPage - 1) * data.perPage , data.currentPage * data.perPage)
+						this.totalCount = res.data.deleted_list.length
+					} else {
+						this.$toast.error('DB error.')
+					}
+                }), err =>{
+                    this.$toast.error('Server is disconnected.')
+                    console.log(err)
+                })
+            },
+        }
+
+    }
+</script>
+<style lang="scss">
+
+    .demo-center {
+        position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -9px;
+    }
+    .accountBlock-ava_box {
+        padding: 0px;
+    }
+    table {
+        margin-bottom: 0px;
+    }
+    .purchase-table {
+//   display: flex;
+//   justify-content: center;
+        text-align: center;
+}
+.page-item {
+	.page-link {
+		width: 39px;
+		height: 23px;
+		background: url('@/assets/images/button-nav.png') no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Friz Quadrata TT';
+		color: #fff;
+		font-size: 12px;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.7;
+		transition: 0.3s;
+		border: 0px;
+	}
+	
+}
+.active {
+		filter: brightness(120%) drop-shadow(0px 0px 5px rgba(7, 71, 192, 0.5));
+		opacity: 1;
+	}
+.page-item:first-child .page-link {
+
+
+	margin-right: 15px;
+}
+.page-item:last-child .page-link {
+	margin-left: 15px;
+
+}
+</style>

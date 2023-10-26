@@ -1,0 +1,37 @@
+## install mysql in ubuntu
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+
+## install phpmyadmin in ubuntu apache
+- check firewall
+sudo ufw app list
+    result should be:   Apache
+                        Apache Full
+                        Apache Secure
+                        OpenSSH
+                        Nginx Full
+                        Nginx HTTP
+                        Nginx HTTPS
+- check apache
+  sudo systemctl status apache2
+
+- configuration apache and phpmyadmin
+  sudo nano /etc/apache2/apache2.conf
+  sudo nano /etc/phpmyadmin/config.inc.php
+    added this lines: 
+      $i++;
+      $cfg['Servers'][$i]['host'] = 'localhost';
+      $cfg['Servers'][$i]['port'] = '3306';
+      $cfg['Servers'][$i]['ssl'] = false;
+      $cfg['Servers'][$i]['AllowNoPassword'] = true;
+      (could refer to the xampp/phpmyadmin/config.inc.php)
+
+- setting mysql root user password when needed
+  mysql
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secret';
+  mysql -u root -p
+  (check if root is set by password)
+  
+- check if phpmyadmin works
+  sudo systemctl restart apache2
+  http://your_ubuntu_server_ip/phpmyadmin
+

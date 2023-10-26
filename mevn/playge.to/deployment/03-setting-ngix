@@ -1,0 +1,109 @@
+
+
+
+
+
+## setting for ngix
+
+sudo apt update
+sudo apt install nginx
+systemctl status nginx
+nano /etc/nginx/sites-available/default
+
+
+
+
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+...
+    location /app2 {
+        proxy_pass http://localhost:3001;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+...
+}
+
+sudo nginx -t
+sudo systemctl restart nginx
+
+
+
+
+
+
+
+
+
+
+location /download {
+        proxy_pass http://localhost:5000;
+    }
+
+
+
+curl -is localhost:80
+
+
+
+
+server {
+	listen 80;
+	listen [::]:80;
+	server_name reallycrypto.com www.reallycrypto.com;
+	return 301 https://$host$request_uri;
+}
+
+// seting https
+
+sudo ufw enable
+sudo ufw allow 'Nginx Full'
+sudo ufw status
+
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt install python3-certbot-nginx
+sudo certbot --nginx -d superwarden.org -d www.superwarden.org
+
+sudo certbot renew --dry-run
+
+
+	# listen 443 ssl default_server;
+	# listen [::]:443 ssl default_server;
+
+
+server {
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	root /home/reallycrypto.com/public;
+
+	index index.html;
+
+	server_name reallycrypto.com www.reallycrypto.com;
+
+	location / {
+		proxy_http_version 1.1;
+		proxy_cache_bypass $http_upgrade;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection 'upgrade';
+		proxy_set_header Host $host;
+	
+		proxy_pass http://localhost:3000;
+	}
+
+	ssl on;
+	ssl_certificate /etc/letsencrypt/live/reallycrypto.com/fullchain.pem; # managed by Certbot;
+	ssl_certificate_key /etc/letsencrypt/live/reallycrypto.com/privkey.pem; # managed by Certbot;
+}
+
+
+
+
+gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+htk:// till .net with `keyserver.ubuntu.com`

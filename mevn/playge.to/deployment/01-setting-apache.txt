@@ -1,0 +1,40 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+
+- routing node server
+    nano /etc/apache2/sites-available/000-default.conf
+        added this line:
+            ProxyPreserveHost On
+            ServerAdmin webmaster@localhost
+            DocumentRoot /var/www/html
+            ProxyPass /.well-known !
+            ProxyPass / http://127.0.0.1:5000/
+            ProxyPassReverse / http://127.0.0.1:5000/
+    sudo a2enmod proxy
+    sudo a2enmod proxy_http
+    sudo a2enmod proxy_balancer
+    sudo a2enmod lbmethod_byrequests
+    sudo systemctl restart apache2
+- routing mysql to new port 8080
+    add the file "phpmyadmin.conf"
+    check "nano /etc/phpmyadmin/apache.conf"
+    go to "/etc/apache2/sites-available"
+    sudo a2disconf phpmyadmin
+    sudo a2ensite phpmyadmin
+    sudo systemctl restart apache2
+    setting firewall
+        sudo ufw allow 8080/tcp
+            result: 
+                Rule added
+                Rule added (v6)
+        sudo ufw app list
+            result:
+                Available applications:
+                    Apache
+                    Apache Full
+                    Apache Secure
+                    Nginx Full
+                    Nginx HTTP
+                    Nginx HTTPS
+                    OpenSSH
+
+

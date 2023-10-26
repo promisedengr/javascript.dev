@@ -1,0 +1,25 @@
+
+# setting-node-server
+sudo apt update
+cd ~
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+sudo apt install nodejs
+node -v
+
+## ref this more if there is error
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+
+sudo apt-get install npm
+
+cd /var/www (github could be used.)
+npm i -g nodemon
+nodemon server.js
+
+npm install -g pm2
+
+pm2 start server.js
+pm2 stop server.js
+pm2 startup
+
+## check if server is running
+curl http://localhost:5000

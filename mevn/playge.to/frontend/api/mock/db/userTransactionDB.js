@@ -1,0 +1,38 @@
+export default {
+    Deposit: [
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        
+
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+    ],
+    Referral: [
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+        { date: new Date(), type: 'Doe', amount: 9.9910, img: 'usdt.svg', status: 0, information: 'awe4353478' },
+    ],
+}
