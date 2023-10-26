@@ -1,0 +1,168 @@
+@import './helper.css';
+/* @import './hassa/style.css'; */
+
+
+:root {
+    --primary: #4a9ea1;
+    --white: #ffffff;
+    --grey: #919191;
+    --dark: #313131;
+  }
+  
+  body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    font-family: 'Roobert TRIAL' sans-serif;
+  }
+  
+  .app-container {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  
+  .side-bar  {
+    min-width: 289px;
+    max-width: 329px;
+    box-shadow: -2px 4px 15px -3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 0 1rem;
+  }
+  
+  .side-bar-header {
+    margin-top: 64px;
+    margin-bottom: 58px;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--primary);
+    margin-top: 8px;
+  }
+  
+  
+  
+  .sidebar-btn,
+  .content {
+    transition: left 0.1s;
+  }
+  
+  .sidebar-btn {
+    display: none;
+  }
+  
+  
+  .content {
+    width: 100%;
+    min-height: 100%;
+    padding: 0px 64px 0px 70px;
+    overflow-y: scroll;
+    height: 100vh;
+    background-color: var(--white);
+  }
+  
+  .input-wrapper {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  h5 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--dark);
+    margin-bottom: 30px;
+    margin-top: 0px;
+    border-bottom: 3px solid var(--primary);
+    width: fit-content;
+  }
+  .input-wrapper input {
+    max-width: 513px;
+    width: 100%;
+    height: 37px;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+    outline: none;
+  }
+  .content-wrapper span {
+    /* color: var(--grey);
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%; */
+  }
+  
+  button {
+    background-color: var(--primary);
+    width: 103px;
+    height: 38px;
+    outline: none;
+    border-radius: 3px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+    border: none;
+  }
+  
+  @media (max-width: 650px) {
+    body {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 300;
+    }
+    .sidebar-btn {
+      position: fixed;
+      left: 15px;
+      top: 15px;
+      z-index: 1;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      background-size: contain;
+      cursor: pointer;
+      display: block;
+    }
+    .logo , h5 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .btn-content {
+      max-width: 160px;
+    }
+    .content {
+      padding: 0px 1rem;
+    }
+    .side-bar {
+      display: none;
+    }
+    .d-block {
+      display: block;
+    }
+  
+  } 
+  
+
+
+
+
+/* 
+
+  input {
+    border: solid 1px #E1E1E1;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 10px;
+      margin-right: 4px;
+  } */

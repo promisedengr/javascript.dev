@@ -1,0 +1,34 @@
+.progress{
+    -webkit-appearance: none;
+    border: none;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    background-color: #202a39;
+  }
+  
+  
+  // class-custome
+  .progress-wrapper{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-width: 50px;
+  
+  }
+  
+/* For Firefox */
+progress::-moz-progress-bar {
+    background: #2ddc4b;
+  }
+  
+  /* For Chrome or Safari */
+  progress::-webkit-progress-value {
+    background: #2ddc4b;
+  }
+  
+  /* For IE10 */
+  progress {
+    background: #2ddc4b;
+  }

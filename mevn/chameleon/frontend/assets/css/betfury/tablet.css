@@ -1,0 +1,28 @@
+/*.wrapper {
+	width: 96%;
+}*/
+
+.small-wrapper {
+	width: 70%;
+}
+
+.licensing .small-wrapper {
+	margin: 0 auto 25px;
+}
+
+.licensing .col {
+	width: 70%;
+	margin: 0 15% 25px;
+}
+
+.casino .col.casino-one {
+	margin-left: 15%;
+}
+
+.casino .col.casino-two {
+	margin-left: 10%;
+}
+
+section {
+	min-width: 100%;
+}

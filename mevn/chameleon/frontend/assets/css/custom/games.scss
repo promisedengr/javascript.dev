@@ -1,0 +1,17 @@
+.games {
+  padding-bottom: 30px;
+  .games__row {
+      grid-template-columns: repeat(6,1fr);
+      display: grid;
+      grid-gap: 24px;
+      @media (max-width: $fury-first-collapse){
+        grid-template-columns: repeat(5,1fr);
+      }
+      @media (max-width: $fury-second-collapse){
+        grid-template-columns: repeat(4,1fr);
+      }
+      @media (max-width: $fury-third-collapse){
+        grid-template-columns: repeat(3,1fr);
+      }
+  }
+}

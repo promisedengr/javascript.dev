@@ -1,0 +1,88 @@
+h1 {
+	text-align: left;
+	margin: 0 0 50px;
+	background-position-x: 0 !important;
+	width: auto;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 30px;
+}
+
+.small-wrapper {
+	text-align: left;
+	width: 96%;
+	margin: 0 3%;
+}
+
+.licensing .small-wrapper {
+	width: 96%;
+	margin: 0 3% 25px;
+}
+
+nav.menu {
+/* 	display: none; */
+}
+
+.menu {
+	margin: 18px 0 0;
+	width: 140px;
+}
+
+.menu ul {
+	display: none;
+}
+
+.mobile-menu {
+	display: block;
+}
+
+.mobile {
+	
+}
+
+.welcome-logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.welcome-logo {
+	background: none;
+	width: 70%;
+	height: auto;
+}
+
+.menu li {
+	background: none;
+	padding-left: 0px !important;
+	margin-left: 5px;
+}
+
+.licensing .col {
+	width: 96%;
+	margin: 0 3%;
+}
+
+.contact h1 {
+	padding-left: 30px;
+	width: 86%;
+	margin-left: 3%;
+}
+
+.contact .col {
+	margin: 0 3% 25px;
+	clear: both;
+}
+
+.licensing h1 {
+	width: 86%;
+	margin-left: 3%;
+}
+
+.casino .col.casino-one,
+.casino .col.casino-two {
+	margin-left: 3%;
+	clear: both;
+}

@@ -1,0 +1,252 @@
+
+.input {
+    width: 100%;
+  
+    &.input-md {
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  input {
+    min-width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #202a39;
+    // pointer-events: none;
+    transition: background-color .1s ease-in-out;
+  }
+  
+  input:checked {
+    background-color: #2ddc4b;
+  }
+  input::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -3px;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 6px;
+    visibility: hidden;
+    transform: rotate(-45deg);
+    border-radius: 1px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+  }
+  input:checked::after{
+    visibility: visible;
+  }
+  
+  
+  .promoBtn {
+    display: none;
+  
+    &.visible {
+      display: inline-block;
+    }
+  }
+  
+  .input-tag {
+    width: 0;
+    flex: 1 1;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    background-color: transparent;
+  
+    &::placeholder {
+      color: #55657e;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+
+
+  .input-block {
+    margin-bottom: 24px;
+  }
+  
+  .input-block-label {
+    display: inline-block;
+    color: #55657e;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  
+.fury__info__btn {
+  border-radius: 50%;
+  background-color: #93acd3;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .1s ease-in-out;
+}
+  .input-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #2a3546;
+    transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+  
+    &:hover,
+    &:focus,
+    &:focus-within {
+      border-color: #55657e;
+    }
+  }
+  
+  .input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    pointer-events: none;
+    color: #55657e;
+  
+    svg {
+      width: 70%;
+      height: 70%;
+      fill: #55657e;
+      transition: fill 0.1s ease-in-out;
+    }
+  }
+  .input-md {
+    .input-inner {
+      height: 44px;
+      border-radius: 10px;
+      padding: 0 14px;
+  
+      button {
+        border-radius: 6px;
+        margin-left: 8px;
+        margin-right: -7px;
+      }
+    }
+  
+    .input-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      margin-left: -4px;
+    }
+  
+    .input-tag {
+      line-height: 20px;
+      font-size: 14px;
+      padding: 0;
+      border: none;
+      height: 20px;
+    }
+  
+    .input-btn-clear,
+    .input-btn-successful {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .input-btn-clear {
+      padding: 0.25em 0.375em;
+  
+      svg {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  
+    .input-btn-successful {
+      svg {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+  .input-sm {
+    .input-inner {
+      height: 32px;
+      border-radius: 10px;
+      padding: 0 14px;
+  
+      button {
+        border-radius: 6px;
+        margin-left: 8px;
+        margin-right: -7px;
+      }
+    }
+  
+    .input-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      margin-left: -4px;
+    }
+  
+    .input-tag {
+      line-height: 20px;
+      font-size: 11px;
+      padding: 0;
+      border: none;
+      height: 20px;
+    }
+  
+    .input-btn-clear,
+    .input-btn-successful {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .input-btn-clear {
+      padding: 0.25em 0.375em;
+  
+      svg {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  
+    .input-btn-successful {
+      svg {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+  .input-btn-clear,
+  .input-btn-successful {
+    outline: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  
+    svg {
+      color: #55657e;
+      transition: color 0.1s ease-in-out;
+    }
+  
+    &:hover {
+      svg {
+        color: #fff;
+      }
+    }
+  
+    &.visible {
+      display: flex !important;
+    }
+  }
+  
