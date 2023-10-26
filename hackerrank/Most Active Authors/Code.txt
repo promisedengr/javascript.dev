@@ -1,0 +1,29 @@
+//4.
+async function getUsernames(threshold) {
+    var https = require('https');
+    async function fetch_by_page(pagenum) {
+        return new Promise((resolve, reject) => {
+            https.get(`https://jsonmock.hackerrank.com/api/article_users?page=${pagenum}`, (res) => {
+                res.setEncoding('utf8');
+                res.on('data', function(body) {
+                    resolve(JSON.parse(body));
+                });
+            });
+        });
+    }
+    var res = { };
+    var cur_page = 1;
+    var result = [];
+    do {
+        res = await fetch_by_page(cur_page);
+        if (Array.isArray(res.data)) {
+            res.data.forEach(elem => {
+                if (elem.submission_count > threshold) {
+                    result.push(elem.username);
+                }
+            });
+        }
+        ++ cur_page;
+    } while (cur_page <= res.total_pages);
+    return result;
+}
