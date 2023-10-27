@@ -1,0 +1,101 @@
+{
+  "mode": "DEVEOLOPMENT",
+  "sugarHeadAddress": "0x6B302B295955954311e4622BDCCCCF52796422fA",
+  "assetLockAddress": "0xE231c2880bEce1c852ede3feBE13e3c6AA5e50Ac",
+  "chadinuAddress": "0xdb43e40FaC065416EACfB45A6f298EbF02Ab5D9A",
+  "dvdaAddress": "0xdb43e40FaC065416EACfB45A6f298EbF02Ab5D9A",
+  "chainId": 1,
+  "network": 1,
+  "chainName": "Ethereum Mainnet",
+  "chainNativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "chainRpcUrls": [
+    "https://mainnet.infura.io/v3/2a1e82d4025c4471bb38d2c80ded94cc",
+    "https://mainnet.infura.io/v3/fe70a28c58cb467aa7ab822efe0298fa",
+    "https://mainnet.infura.io/v3/b3e04d452aa343c983bdd013a58d87b8",
+    "https://mainnet.infura.io/v3/43370da706d548f4ad4441383eb45a0b"
+  ],
+  "chainBlockExplorerUrls": ["https://etherscan.io/"],
+  "apiBaseURL": "https://api.sugarheads.io/api/",
+  "avaliabilityDate": "mar 13, 2022 00:00:00",
+  "maxTicketsPerTX": 10,
+  "totalSupply": 1750,
+  "coinGeckoBaseUrl": "https://www.coingecko.com/en/coins/",
+  "assets": [
+    {
+      "name": "CHAINLINK",
+      "symbol": "LINK",
+      "url": "chainlink"
+    },
+    {
+      "name": "SHIBA INU",
+      "symbol": "SHIB",
+      "url": "shiba-inu"
+    },
+    {
+      "name": "DOGELON MARS",
+      "symbol": "ELON",
+      "url": "dogelon-mars"
+    },
+    {
+      "name": "PAX GOLD",
+      "symbol": "PAXG",
+      "url": "pax-gold"
+    },
+    {
+      "name": "QUANT",
+      "symbol": "QNT",
+      "url": "quant"
+    },
+    {
+      "name": "HEX",
+      "symbol": "HEX",
+      "url": "hex"
+    },
+    {
+      "name": "USD COIN",
+      "symbol": "USDC",
+      "url": "usd-coin"
+    },
+
+    {
+      "name": "OLD BITCOIN",
+      "symbol": "BC",
+      "url": "old-bitcoin/usd"
+    },
+    {
+      "name": "LAIKA",
+      "symbol": "LAIKA",
+      "url": "laika"
+    }
+  ],
+  "team": [
+    {
+      "name": 1,
+      "url": "https://twitter.com/Web3DMD"
+    },
+    {
+      "name": 2,
+      "url": "https://twitter.com/JaypKoe"
+    },
+    {
+      "name": 3,
+      "url": "https://twitter.com/truckstopkwikie"
+    },
+    {
+      "name": 4,
+      "url": "https://twitter.com/SugarHeads_NFT"
+    },
+    {
+      "name": 5,
+      "url": "https://twitter.com/Web3H3ro"
+    },
+    {
+      "name": 6,
+      "url": "https://twitter.com/ChrisHu50256311"
+    }
+  ]
+}
