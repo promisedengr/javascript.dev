@@ -1,0 +1,19 @@
+{
+  "name": "part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "axios": "^0.24.0",
+    "bignumber.js": "^9.0.0",
+    "ethers": "^5.5.1",
+    "request-promise": "^4.2.6",
+    "web3": "^1.2.6"
+  }
+}
