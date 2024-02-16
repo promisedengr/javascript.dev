@@ -1,0 +1,45 @@
+.birthday input {
+  height: 46px!important;
+  font-size: 16px!important;
+  padding: 10px!important;
+  border-radius: 10px!important;
+  background-image: none!important;
+}
+.birthday input:focus-visible {
+  outline: none!important;
+}
+.birthday_light input {
+  background-color: #dcdeeb!important;
+  border: 1px solid #c9cde4!important;
+  color: #070A20!important;
+}
+.birthday_light input:focus-visible {
+  background-color: #fefeff!important;
+}
+.birthday_dark input {
+  background-color: #272c48!important;
+  border: 1px solid #373d5e!important;
+  color: #F9FAFF!important;
+}
+.birthday_dark input {
+  background-color: transparent!important;
+}
+.birthday_dark input:focus-visible {
+  background-color: #101326!important;
+}
+.birthday_dark > div > div {
+  background-color: #101326!important;
+  border: 1px solid #272c48!important;
+}
+
+
+.cus_countrySel > div {
+  padding: 10px;
+}
+.cus_countrySel[class*='dark'] > div {
+  background-color: #101326!important;
+  border: 1px solid #272c48!important;
+}
+.cus_countrySel[class*='dark'] > div:nth-child(4) > div > *:hover {
+  background-color: #282c44!important;
+}

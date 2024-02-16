@@ -1,0 +1,31 @@
+{
+  "name": "dex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "migrate": "truffle migrate --network development",
+    "deploy": "truffle deploy",
+    "migrate_rops": "truffle migrate --network ropsten",
+    "deploy_rops": "truffle deploy --network ropsten",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "bip39": "^3.0.4",
+    "dotenv": "^10.0.0",
+    "web3": "^1.6.0",
+    "web3-eth-contract": "^1.6.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "truffle-plugin-verify": "^0.5.15"
+  }
+}

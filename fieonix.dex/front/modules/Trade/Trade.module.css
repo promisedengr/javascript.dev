@@ -1,0 +1,307 @@
+.form_fontrol_half {
+  /* float: left; */
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(50% - 22px);
+}
+.form_fontrol_mid {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  margin: -12px 10px 0 10px;
+}
+.form_fontrol_mid[class*='dark'] {
+  color: #8C56FF;
+}
+.form_fontrol_mid[class*='light'] {
+  color: #415EA9;
+}
+
+.spliter[class*='dark'] {
+  border-top: 1px solid #292F56;
+}
+.spliter[class*='light'] {
+  border-top: 1px solid #DADCEC;
+}
+
+.loanAmountSel {
+  position: relative!important;
+  top: -50px;
+  left: calc(100% - 120px);
+  height: 43.5px!important;
+  border-radius: initial!important;
+  border-top-right-radius: 10px!important;
+  border-bottom-right-radius: 10px!important;
+  padding: 8px 14px!important;
+}
+.paddingRbig {
+  padding-right: 130px;
+}
+.loanAmountSel {
+  width: 120px;
+}
+.loanAmountSel .selTxt {
+  font-size: 14px;
+  display: inline-block;
+  margin: 4px 0 0 10px;
+}
+.loanAmountSelDark {
+  background: #272C48!important;
+  border-right: 1px solid #41476C!important;
+}
+.loanAmountSelLight {
+  background: #FCFCFF!important;
+  border-right: 1px solid #DADCEC!important;
+}
+.loanAmountMenu > div:nth-child(3) {
+  background-color: #272C48!important;
+}
+
+
+.submitContainer {
+  margin-top: 5px!important;
+}
+.submitContainer button {
+  width: 192px;
+}
+
+.meta_table {
+  margin-top: 5px!important;
+  width: 100%;
+  clear: both;
+}
+.meta_table > div {
+  width: 100%;
+  display: table;
+}
+.meta_table > div > div {
+  display: table-cell;
+  font-size: 13px;
+  font-weight: bold;
+}
+.meta_table > div > div:first-child {
+  text-align: left;
+}
+.meta_table[class*='dark'] > div > div:first-child {
+  color: #8C56FF;
+}
+.meta_table > div > div:last-child {
+  text-align: right;
+  width: 100px;
+}
+.meta_table[class*='light'] > div > div:first-child {
+  color: #415EA9;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ------------------             SMART TRADE           -------------- */
+/* ------------------------------------------------------------------- */
+.tabled_form {
+  clear: both;
+  width: 100%;
+  margin: 24px 0;
+}
+.tabled_form > div {
+  display: table;
+  width: 100%;
+}
+.tabled_form > div > div {
+  display: table-cell;
+}
+.tabled_form > div > div:first-child {
+  width: 200px;
+  text-align: left;
+}
+.tabled_form > div > div:last-child {
+  text-align: right;
+}
+.tabled_form > div:first-child > div {
+  font-size: 14px;
+  color: #8388A8;
+}
+.tabled_form > div:last-child > div {
+  padding: 10px 0;
+}
+.v_swap_icon {
+  position: relative;
+  top: -18px;
+  left: calc(50% - 18px);
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+}
+.v_swap_icon[class*='dark'] {
+  background-color: #15182b;
+}
+.v_swap_icon[class*='light'] {
+  background-color: #edeef5;
+}
+.v_swap_icon > svg {
+  color: #8C56FF;
+}
+.coin_table {
+  clear: both;
+  width: 100%;
+  display: table;
+}
+.coin_table > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.coin_table > div:first-child {
+  width: 54px;
+}
+.coin_table > div:nth-child(2) > span {
+  display: block;
+}
+.coin_table > div:nth-child(2) > span:first-child {
+  font-size: 16px;
+}
+.coin_table > div:nth-child(2) > span:last-child {
+  font-size: 12px;
+  color: #8388A8;
+}
+.coin_table > div:last-child {
+  width: 120px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.block_area {
+  width: 484px;
+  margin: 28px;
+}
+.notice_txt {
+  font-size: 16px;
+}
+.notice_meta {
+  font-size: 13px;
+  color: #8388A8!important;
+}
+.notice_meta > span {
+  color: #8C56FF!important;
+  text-decoration: underline;
+}
+.account_area {
+  width: 484px;
+  margin: 28px;
+  padding: 14px;
+  border: 1px solid #DADCEC;
+  border-radius: 10px;
+}
+.account_area[class*='dark'] {
+  border-color: #292F56;
+  background-color: #272C48;
+}
+.account_area[class*='dark'] hr {
+  border-top: 1px solid #3E4466;
+}
+.account_area_header {
+  width: 100%;
+}
+.account_area_header > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.account_area_header > div:first-child {
+  width: 40px;
+}
+.account_area_header > div:nth-child(2) {
+  width: calc(100% - 60px);
+  margin-top: -10px;
+}
+.account_area_header > div:nth-child(2) > span {
+  display: block;
+}
+.account_area_header > div:nth-child(2) > span:first-child {
+  font-size: 13px;
+}
+.account_area_header > div:nth-child(2) > span:last-child {
+  font-size: 18px;
+}
+.account_area_header > div:last-child{
+  width: 10px;
+}
+.collaped_area, 
+.total_bal_area {
+  width: 100%;
+}
+.total_bal_area > div {
+  width: inherit;
+  display: table;
+}
+.total_bal_area > div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.total_bal_area > div > span {
+  display: block;
+}
+.total_bal_area > div > span:first-child {
+  font-size: 13px;
+  color: #8388A8!important;
+}
+.total_bal_area > div > div > span:last-child {
+  font-size: 16px;
+}
+.total_bal_area .total_bal_unit {
+  font-size: 13px;
+}
+.total_coin_bal {
+  margin: 9px 5px;
+}
+.total_coin_bal > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.marginR10 {
+  margin-right: 10px;
+}
+.total_coin_meta {
+  padding-top: 5px;
+  width: calc(100% - 40px);
+}
+.total_coin_meta > div {
+  width: 100%;
+  display: table;
+}
+.total_coin_meta > div > div {
+  display: table-cell;
+}
+.total_coin_meta > div:first-child > div {
+  font-size: 14px;
+}
+.total_coin_meta > div:first-child > div:last-child,
+.total_coin_meta > div:last-child > div:last-child {
+  text-align: right;
+}
+.total_coin_meta > div:last-child > div {
+  font-size: 12px;
+  color: #8388A8!important;
+}
+
+.pay_area[class*='dark'] {
+  border-color: #4E557E;
+  background-color: #2A3057;
+}
+.pay_area > div:last-child {
+  font-size: 14px;
+}
+.pay_area > div:last-child > div:first-child > span:first-child {
+  color: #8C56FF!important;
+}
+.pay_area > div:last-child > div:last-child {
+  color: #8388A8!important;
+}
+
+.pay_area + div svg {
+  color: #8C56FF;
+}
+.pay_area + div .agree_txt {
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}

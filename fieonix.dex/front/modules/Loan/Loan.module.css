@@ -1,0 +1,151 @@
+.loanAmountSel {
+  position: relative!important;
+  top: -50px;
+  left: 0;
+  height: 43.5px!important;
+  border-radius: initial!important;
+  border-top-left-radius: 10px!important;
+  border-bottom-left-radius: 10px!important;
+  padding: 8px 14px!important;
+}
+.paddingLbig {
+  padding-left: 130px;
+}
+.loanAmountSel {
+  width: 120px;
+}
+.loanAmountSel .selTxt {
+  font-size: 14px;
+  display: inline-block;
+  margin: 4px 0 0 10px;
+}
+.loanAmountSelDark {
+  background: #272C48!important;
+  border-right: 1px solid #41476C!important;
+}
+.loanAmountSelLight {
+  background: #FCFCFF!important;
+  border-right: 1px solid #DADCEC!important;
+}
+.loanAmountMenu > div:nth-child(3) {
+  background-color: #272C48!important;
+}
+
+.term_container,
+.ltv_container {
+  /* background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px; */
+  display: inline-block;
+  padding: 5px;
+}
+
+.term_container label,
+.ltv_container label {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+  width: 33.333%;
+}
+
+.term_container label {
+  height: 46px;
+  border-radius: 10px;
+  width: 50px;
+  margin: 0 10px;
+  padding: 3px;
+}
+.term_container[class*='dark'] label {
+  background: #272C48;
+  border: 1px solid #292F56;
+}
+.term_container[class*='light'] label {
+  background: #F7F7FE;
+  border: 1px solid #DADCEC;
+}
+
+.term_container input[type=radio], 
+.ltv_container input[type=radio] {
+  display: none;
+}
+
+.term_container input[type=radio] + label,
+.ltv_container input[type=radio] + label {
+  font-size: 18px;
+}
+
+.term_container[class*='light'] input[type=radio]:checked + label,
+.ltv_container[class*='light'] input[type=radio]:checked + label {
+  background-color: #5D87F1;
+  border: 1px solid #5D87F1;
+  color: #F9FAFF;
+}
+
+.term_container[class*='dark'] input[type=radio]:checked + label,
+.ltv_container[class*='dark'] input[type=radio]:checked + label {
+  background-color: #4D5587;
+  border: 1px solid #4D5587;
+  color: #F9FAFF;
+}
+
+.total_interest {
+  padding-right: 60px;
+  text-align: right;
+  font-size: 18px;
+}
+.total_interest_amount {
+  display: inline-block;
+  position: relative;
+  font-size: 13px;
+  top: -35px;
+  left: 10px;
+}
+.total_interest_unit {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  top: -34px;
+  left: calc(100% - 100px);
+}
+
+.submitContainer {
+  margin-top: 5px!important;
+}
+.submitContainer button {
+  width: 192px;
+}
+
+.meta_table {
+  margin-top: -12px!important;
+  width: 100%;
+  clear: both;
+}
+.meta_table > div {
+  width: 100%;
+  display: table;
+}
+.meta_table > div > div {
+  display: table-cell;
+  font-size: 13px;
+  font-weight: bold;
+}
+.meta_table > div > div:first-child {
+  text-align: right;
+}
+.meta_table[class*='dark'] > div > div:first-child {
+  color: #8C56FF;
+}
+.meta_table > div > div:last-child {
+  text-align: right;
+  width: 60px;
+}
+.meta_table[class*='light'] > div > div:first-child {
+  color: #415EA9;
+}

@@ -1,0 +1,17 @@
+.saveProfile > button {
+    width: 192px;
+}
+.accordian > div > div:first-child {
+    padding: 0 10px;
+    width: 100%;
+}
+.accordian > div > div:first-child > div:nth-child(2){
+    float: right;
+    transform: rotate(90deg)!important;
+}
+.accordian > div > div:first-child[class*="Mui-expanded"] > div:nth-child(2){
+    transform: rotate(270deg)!important;
+}
+.accordian > div {
+    background-color: transparent!important;
+}

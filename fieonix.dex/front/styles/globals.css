@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, h5, h6, span, p, div, a, tspan {
+      @apply text-black dark:text-white;
+    }
+}
+
+.dark body {
+    background-color: #070a20;
+}
+.light body {
+    background-color: #e0e1eb;
+}
+.header_bar {
+    z-index: 9999;
+}
+.side_bar {
+    height: calc(100% - 150px);
+    position: fixed;
+    top: 124px;
+    left: 28px;
+}
+.sidebar_icon {
+    margin: 10px 0;
+}
+.sidebar_icon > div:last-child {
+    font-size: 12px;
+    color: #8388A8!important;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+.logout_icon {
+    padding: 14px;
+}
+.mycontainer {
+    margin-top: 100px;
+    padding-left: 126px;
+}
+.regcontainer {
+    max-width: 600px;
+    width: 60%;
+    margin: 0px auto;
+}
+.reg_step {
+    clear: both;
+    margin: 88px auto 0;
+    width: 400px;
+}
+
+.right_side[class*='light'] {
+    background-color: #EDEEF5;
+}
+.right_side[class*='dark'] {
+    background-color: #15182B;
+}
+
+.log_container {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 320px);
+    margin-right: 20px;
+}
+.send_container {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+}
+
+.toggle-checkbox{
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+.toggle{
+    height: 29px;
+    width: 29px;
+    position: absolute;
+    border-radius: 15px;
+    /* background-color: #04f; */
+    /* right: 50%; */
+    /* transition: all 2s; */
+}
+.toggle-switch{
+    /* border: solid 2px #04f; */
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 3px;
+    width: 67px;
+    height: 35px;
+}
+.toggled .toggle{
+    right: 3px;
+}
+
+
+.sideBarPopOver > div:nth-child(3) {
+    width: 130px;
+}
+.sideBarPopOver > div:nth-child(3) span {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.custom_snack[class*='dark'], 
+.sideBarPopOver[class*='dark'] > div:nth-child(3) {
+    background-color: #272C48;
+}
+
+.custom_snack[class*='dark'] > div {
+    background-color: none;
+}

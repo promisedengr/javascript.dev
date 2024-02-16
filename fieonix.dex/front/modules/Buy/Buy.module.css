@@ -1,0 +1,127 @@
+.buy_title[class*='dark'] {
+  background-color: #070A2A;
+}
+.buy_title[class*='light'] {
+  background-color: #e0e1eb;
+}
+.loanAmountSel {
+  position: relative!important;
+  top: -50px;
+  left: calc(100% - 120px);
+  height: 43.5px!important;
+  border-radius: initial!important;
+  border-top-right-radius: 10px!important;
+  border-bottom-right-radius: 10px!important;
+  padding: 8px 14px!important;
+}
+.paddingRbig {
+  padding-right: 130px;
+}
+.loanAmountSel {
+  width: 120px;
+}
+.loanAmountSel .selTxt {
+  font-size: 14px;
+  display: inline-block;
+  margin: 4px 0 0 10px;
+}
+.loanAmountSelDark {
+  background: #272C48!important;
+  border-right: 1px solid #41476C!important;
+}
+.loanAmountSelLight {
+  background: #FCFCFF!important;
+  border-right: 1px solid #DADCEC!important;
+}
+.loanAmountMenu > div:nth-child(3) {
+  background-color: #272C48!important;
+}
+
+
+
+
+
+.block_area {
+  width: 484px;
+  margin: 28px;
+}
+.notice_txt {
+  font-size: 16px;
+}
+.notice_meta {
+  font-size: 13px;
+  color: #8388A8!important;
+}
+.notice_meta > span {
+  color: #8C56FF!important;
+  text-decoration: underline;
+}
+.account_area {
+  /* width: 484px; */
+  margin: 0 12px 12px 12px;
+  padding: 14px;
+  border: 1px solid #DADCEC;
+  border-radius: 10px;
+}
+.account_area[class*='dark'] {
+  border-color: #292F56;
+  background-color: #272C48;
+}
+.account_area[class*='dark'] hr {
+  border-top: 1px solid #3E4466;
+}
+
+.pay_area[class*='dark'] {
+  border-color: #4E557E;
+  background-color: #2A3057;
+}
+.pay_area > div:last-child {
+  font-size: 14px;
+}
+.pay_area > div:last-child > div:first-child > span:first-child {
+  color: #8C56FF!important;
+}
+.pay_area > div:last-child > div:last-child {
+  color: #8388A8!important;
+}
+
+.pay_agree svg {
+  color: #8C56FF;
+}
+.agree_txt {
+  padding-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+
+
+.wallet_sel {
+  border-radius: 10px;
+  width: 280px;
+}
+.wallet_sel[class*='dark'] {
+  background: #272C48;
+  border: 1px solid #292F56;
+}
+.wallet_sel[class*='light'] {
+  background: #FCFCFF;
+  border: 1px solid #DADCEC;
+}
+.wallet_sel_sub > div:nth-child(3) {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.wallet_sel_sub[class*='dark'] > div:nth-child(3) {
+  background: #292C47;
+  border: 1px solid #373A5C;
+}
+.wallet_sel_sub[class*='light'] > div:nth-child(3) {
+  background: #f7f7fb;
+  border: 1px solid #dadcec;
+}
+.wallet_sel_sub .wallet_sel_txt {
+  width: 276px;
+}

@@ -1,0 +1,106 @@
+.changeAvata > *:not(input) {
+    display: inline-block;
+    vertical-align: middle;
+}
+.saveProfile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse
+}
+.saveProfile > button {
+    width: 120px;
+    margin: 0 10px;
+}
+.roundImg {
+    border-radius: 50%;
+}
+
+.phonenum input,
+.birthday input {
+    height: 46px!important;
+    font-size: 16px!important;
+    padding: 10px!important;
+    border-radius: 10px!important;
+    background-image: none!important;
+}
+.phonenum input {
+    width: calc(100% + 8px)!important;
+    padding-left: 50px!important;
+    border-radius: none!important;
+    border-top-right-radius: 10px!important;
+    border-bottom-right-radius: 10px!important;
+}
+.phonenum input:focus-visible,
+.birthday input:focus-visible {
+    outline: none!important;
+}
+.phonenum_light input,
+.birthday_light input {
+    background-color: #dcdeeb!important;
+    border: 1px solid #c9cde4!important;
+    color: #070A20!important;
+}
+.phonenum_light input {
+    background-color: #FCFCFF!important;
+}
+.phonenum_light input:focus-visible,
+.birthday_light input:focus-visible {
+    background-color: #fefeff!important;
+}
+.phonenum_dark input,
+.birthday_dark input {
+    background-color: #272c48!important;
+    border: 1px solid #373d5e!important;
+    color: #F9FAFF!important;
+}
+.birthday_dark input {
+    background-color: transparent!important;
+}
+.phonenum_dark input:focus-visible,
+.birthday_dark input:focus-visible {
+    background-color: #101326!important;
+}
+.phonenum_dark > div > div > ul,
+.birthday_dark > div > div {
+    background-color: #101326!important;
+    border: 1px solid #272c48!important;
+}
+.phonenum_dark > div > div {
+    background-color: #272c48!important;
+    border: 1px solid #373d5e!important;
+}
+.phonenum_dark > div > div > ul > li:hover {
+    background-color: #202858!important;;
+}
+.phonenum_dark div[class*='open'],
+.phonenum_dark div[class*='selected-flag'],
+.phonenum_dark div[class*='selected-flag']:focus,
+.phonenum_dark li[class*='highlight'] {
+    background-color: #272c48!important;
+}
+
+
+
+.toggleBlock > div {
+    padding: 5px;
+    margin: 15px;
+    border-bottom: 1px solid #6f7181;
+    height: 50px;
+}
+.toggleBlock > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.toggleBlock > div > span:nth-child(2) {
+    margin-left: 10px;
+}
+.toggleBlock > div > span:nth-child(4) {
+    float: right;
+}
+.toggleBlock2 > div > span:nth-child(3) {
+    float: right;
+}
+
+.savePassword > button {
+    width: calc(50% - 10px);
+}

@@ -1,0 +1,235 @@
+.block_area {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 0 1rem 0;
+}
+.h_block_area[class*='dark'],
+.block_area[class*='dark'] {
+  background-color: #21243B;
+}
+.h_block_area[class*='light'],
+.block_area[class*='light'] {
+  background-color: #FCFCFF;
+}
+.block_area[class*='dark'] hr {
+  border-top: 1px solid #3E4466;
+}
+.block_area[class*='light'] hr {
+  border-top: 1px solid #DADCEC;
+}
+.account_pension_area,
+.account_interest_area {
+  border: 1px solid #3480FF;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.account_pension_area[class*='dark'] {
+  background-color: #101326;
+  border-color: #292F56;
+}
+.account_pension_area[class*='light'] {
+  background-color: #EDEEF5;
+  border-color: #DADCEC;
+}
+.account_area_header {
+  width: 100%;
+}
+.account_area_header > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.account_area_header > div:first-child {
+  width: 40px;
+}
+.account_area_header > div:nth-child(2) {
+  width: calc(100% - 60px);
+  margin-top: -10px;
+}
+.account_area_header > div:nth-child(2) > span {
+  display: block;
+}
+.account_area_header > div:nth-child(2) > span:first-child {
+  font-size: 13px;
+}
+.account_area_header > div:nth-child(2) > span:last-child {
+  font-size: 18px;
+}
+.account_area_header > div:last-child{
+  width: 10px;
+}
+.collaped_area, 
+.total_bal_area {
+  width: 100%;
+}
+.total_bal_area > div {
+  width: inherit;
+  display: table;
+}
+.total_bal_area > div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.total_bal_area > div > span {
+  display: block;
+}
+.total_bal_area > div > span:first-child {
+  font-size: 13px;
+  color: #8388A8!important;
+}
+.total_bal_area > div > div > span:last-child {
+  font-size: 16px;
+}
+.total_bal_area .total_bal_unit {
+  font-size: 13px;
+}
+.total_coin_bal {
+  margin: 9px 5px;
+}
+.total_coin_bal > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.marginR10 {
+  margin-right: 10px;
+}
+.total_coin_meta {
+  padding-top: 5px;
+  width: calc(100% - 40px);
+}
+.total_coin_meta > div {
+  width: 100%;
+  display: table;
+}
+.total_coin_meta > div > div {
+  display: table-cell;
+}
+.total_coin_meta > div:first-child > div {
+  font-size: 14px;
+}
+.total_coin_meta > div:first-child > div:last-child,
+.total_coin_meta > div:last-child > div:last-child {
+  text-align: right;
+}
+.total_coin_meta > div:last-child > div {
+  font-size: 12px;
+  color: #8388A8!important;
+}
+.total_coin_meta > div:last-child > div.activeAPY {
+  color: #00FF3E!important;
+}
+.total_coin_meta > div:last-child > div:nth-child(2),
+.total_coin_meta > div:last-child > div:nth-child(3) {
+  font-size: 10px;
+}
+.total_coin_meta > div:last-child > div:nth-child(3)[class*="green"] {
+  color: #3AC15B!important;
+}
+.total_coin_meta > div:last-child > div:nth-child(3)[class*="red"] {
+  color: #FA5349!important;
+}
+
+.qr_area {
+  width: 97px;
+  height: 97px;
+  margin: 10px auto 5px;
+}
+.wallet_txt > div:last-child {
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap;          /* Chrome & Safari */ 
+  white-space: -pre-wrap;                 /* Opera 4-6 */
+  white-space: -o-pre-wrap;               /* Opera 7 */
+  white-space: pre-wrap;                  /* CSS3 */
+  word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #3480FF!important;
+  text-align: center;
+}
+
+.wallet_sel {
+  border-radius: 10px;
+}
+.wallet_sel[class*='dark'] {
+  background: #272C48;
+  border: 1px solid #292F56;
+}
+.wallet_sel[class*='light'] {
+  background: #FCFCFF;
+  border: 1px solid #DADCEC;
+}
+.wallet_sel_sub > div:nth-child(3) {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.wallet_sel_sub[class*='dark'] > div:nth-child(3) {
+  background: #292C47;
+  border: 1px solid #373A5C;
+}
+.wallet_sel_sub[class*='light'] > div:nth-child(3) {
+  background: #f7f7fb;
+  border: 1px solid #dadcec;
+}
+.wallet_sel_sub .wallet_sel_txt {
+  width: 246px;
+}
+
+
+.io_symbol {
+  width: 42px;
+  height: 42px;
+}
+.io_symbol[class*='dark'] {
+  background: #1D2243;
+  border: 1px solid #292F56;
+  border-radius: 10px;
+}
+.io_symbol[class*='light'] {
+  background: #F2F3F8;
+  border: 1px solid #DADCEC;
+  border-radius: 10px;
+}
+.receive_color {
+  color: #3AC15B!important;
+}
+.send_color {
+  color: #FA5349!important;
+}
+.unit_txt {
+  color: #5C3AA4!important;
+}
+
+.send_sel_sub .wallet_sel_txt {
+  width: 260px;
+}
+.total_send {
+  padding-right: 70px!important;
+}
+.send_unit_sel > div:nth-child(3) {
+  margin-top: 25px;
+  margin-left: -20px;
+  border-radius: 6px;
+}
+.send_unit_sel[class*='dark'] > div:nth-child(3) {
+  background: #292C47;
+  border: 1px solid #373A5C;
+}
+.send_unit_sel[class*='light'] > div:nth-child(3) {
+  background: #f7f7fb;
+  border: 1px solid #dadcec;
+}
+/* .send_unit_sel .wallet_sel_txt {
+  width: 246px;
+} */
+
+.info_icon {
+  width: 12px!important;
+  height: 12px!important;
+}
+
